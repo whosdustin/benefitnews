@@ -17,7 +17,7 @@ title: Benefit News
 email: hello@4benefitnews.com
 description: A community of people sharing news about companies that help build positive change in the world
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://4benefitnews.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 4benefitnews
 facebook_page: 4benefitnews
 pintrest_page: 4benefitnews
