@@ -8,8 +8,9 @@
       color: $form-label-color
     ),
     input: (
+      margin: 10px 0,
       padding: 10px 0 10px 10px,
-      border: $input-border,
+      border: solid 1px $input-border,
       radius: 0,
       background: $input-bkg,
       color: $input-color
@@ -39,10 +40,10 @@
       display: block;
       position: relative;
       width: 100%;
-      margin: 10px 0;
+      // margin: map-deep-get($options, input, margin);
       padding: map-deep-get($options, input, padding);
       background: map-deep-get($options, input, background);
-      border: 1px solid map-deep-get($options, input, border);
+      border: map-deep-get($options, input, border);
       border-radius: map-deep-get($options, input, radius);
       font-family: map-get($options, font);
       font-size: $font-size-base;
@@ -78,7 +79,7 @@
       cursor: pointer;
 
       > .action {
-        margin: 0 1em 0.2em 0;
+        margin: 0 0.5em 0.2em 0;
       }
 
       &.-inline {
@@ -101,7 +102,7 @@
       max-width: 100%;
       padding: 10px 24px 10px 10px;
       vertical-align: middle;
-      border: solid 1px map-deep-get($options, input, border);
+      border: map-deep-get($options, input, border);
       border-radius: 0;
       background: $input-bkg url($select-image) no-repeat right 8px center;
       background-size: 8px 10px;
@@ -146,5 +147,3 @@
     }
   }
 }
-
-@include forms();

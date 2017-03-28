@@ -4,8 +4,12 @@
 @import 'vendors/normalize/normalize/import-now';
 
 $font-size-base: 20px;
-$brand-color-primary:   #5F81E4 !default;
+$brand-color-primary:   #800080 !default;
 $brand-color-secondary: #3DBBA0 !default;
+$font-family-primary: 'Karla', sans-serif;
+$font-family-secondary: 'Crimson Text', serif;
+
+$input-border: $brand-color-primary;
 
 // Global //========================================
 @import 'global/settings';
@@ -25,11 +29,22 @@ $brand-color-secondary: #3DBBA0 !default;
 @import 'components/modal';
 @import 'components/nav';
 
-
+@include buttons();
+@include forms((
+  input:(
+  margin: 0,
+  padding: 10px 0 10px 10px,
+  border: solid 3px $input-border,
+  radius: 0,
+  background: $input-bkg,
+  color: $input-color
+  )));
 
 // Utilities //========================================
 @import 'utils/helpers';
 // @import 'utils/docs';
+
+
 
 
 // Theme //=======================================

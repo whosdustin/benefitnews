@@ -122,7 +122,7 @@ $button-colors: (
 $form-label-color: #666;
 
 $input-bkg: #fff;
-$input-border: $border-color-base;
+$input-border: $border-color-base !default;
 $input-color: $font-color-base;
 
 $input-color-placeholder: #ccc;
