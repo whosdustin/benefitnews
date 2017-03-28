@@ -52,6 +52,27 @@
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
   <body>
-    {{ content }}
+    <a href="#main_content" class="_sr-only _sr-only-focus">Skip to Main Content</a>
+
+    <!--[if lt IE 8]>
+      <div class="-full _text-center">
+      <p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      </div>
+    <![endif]-->
+
+
+
+    <div id="main_content" class="site-container" role="main">
+
+      <div class="brand">
+        <img src="#" alt="4 Benefit News">
+      </div>
+      
+      {{ content }}
+    </div>
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendors/jquery.min.js"><\/script>')</script>
+    <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script> -->
   </body>
 </html>
