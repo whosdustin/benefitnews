@@ -3,7 +3,7 @@
     name: 'form',
     font: $font-family-form,
     label: (
-      weight: 700,
+      weight: $font-weight-action,
       size: $font-size-base,
       color: $form-label-color
     ),
@@ -75,7 +75,7 @@
       margin-bottom: 0.5em;
       padding-left: 1em;
       font-family: map-get($options, font);
-      font-weight: 400;
+      font-weight: map-deep-get($options, label, weight);
       cursor: pointer;
 
       > .action {
