@@ -20,7 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://4benefitnews.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 4benefitnews
 facebook_page: 4benefitnews
-pintrest_page: 4benefitnews
+pinterest_page: 4benefitnews
 github_username: whosdustin
 
 # Build settings
