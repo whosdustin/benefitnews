@@ -46,17 +46,6 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
-  {% comment %}
-  {% if page.id == 'home' %}
-    {% assign sort_episodes = site.episodes | sort: 'episode_number' | reverse %}
-    {% for episode in sort_episodes limit: 1 %}
-    {% assign page_image = episode.feature_image | prepend: site.baseurl | prepend: site.url %}
-    {% endfor %}
-  {% else %}
-    {% assign page_image = page.feature_image | prepend: site.baseurl | prepend: site.url %}
-  {% endif %}
-  {% endcomment %}
-
 	<meta name="twitter:card" content="summary_large_image"/>
 	<meta name="twitter:site" content="@{{ site.twitter_username }}"/>
 	<meta name="twitter:domain" content="{{ site.url }}{{ page.url | prepend: site.baseurl }}"/>
@@ -108,8 +97,6 @@
     <footer class="footer">
       <div class="site-container">
         Copyright &copy; 2017 Copyright 4Benefit News All Rights Reserved.
-        <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
-        </div>
       </div>
     </footer>
 
@@ -119,24 +106,6 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1834047743522130',
-          xfbml      : true,
-          version    : 'v2.8'
-        });
-        FB.AppEvents.logPageView();
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendors/jquery.min.js"><\/script>')</script>
     <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script> -->

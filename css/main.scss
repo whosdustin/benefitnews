@@ -19,35 +19,8 @@ $input-border: $brand-color-primary;
 @import 'global/base';
 @import 'global/typography';
 
-// Layout //========================================
-
-// Components //========================================
-@import 'components/alerts';
-@import 'components/buttons';
-@import 'components/control-group';
-@import 'components/forms';
-@import 'components/tables';
-@import 'components/menu';
-@import 'components/modal';
-@import 'components/nav';
-
-@include buttons();
-@include forms((
-  input:(
-  margin: 0,
-  padding: 10px 0 10px 10px,
-  border: solid 3px $input-border,
-  radius: 0,
-  background: $input-bkg,
-  color: $input-color
-  )));
-
 // Utilities //========================================
 @import 'utils/helpers';
-// @import 'utils/docs';
-
-
-
 
 // Theme //=======================================
 @import 'theme';
