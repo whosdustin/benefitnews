@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 body {
   min-height: 100%;
-  background: #F5F5F5;
+  background: #FFFFFF;
 }
 
 .site-container {
@@ -103,7 +103,7 @@ a {
 
 .footer {
   padding: 20px;
-  background: scale_color($brand-color-neutral, $lightness: 40%);
+  background: #FFFFFF;
   color: scale_color($brand-color-neutral, $lightness: -40%);
   font-size: .8em;
   margin-top: 80px;
