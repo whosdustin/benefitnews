@@ -12,10 +12,7 @@ email: hello@4benefitnews.com
 description: A community around sharing news about companies that help build positive
   change in the world.
 baseurl: ''
-url: http://4benefitnews.com
-twitter_username: 4benefitnews
-facebook_page: 4benefitnews
-pinterest_page: 4benefitnews
+url: https://4benefitnews.com
 github_username: whosdustin
 markdown: kramdown
 gems:
