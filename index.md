@@ -13,7 +13,6 @@ Unfortunately, I have not been able to make 4Benefit News a priority and for tha
 
 If you have any questions or concerns regarding my decision, please feel free to reach out to me at <a href="mailto:dustin@delatore.me">dustin@delatore.me</a>
 
-
 Sincerely,
 Dustin Delatore
 
